@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,148 +10,28 @@ part of 'post_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
 
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-PostModel _$PostModelFromJson(Map<String, dynamic> json) {
-  return _PostModel.fromJson(json);
-}
-
 /// @nodoc
-mixin _$PostModel {
-  int? get userId => throw _privateConstructorUsedError;
-  int? get id => throw _privateConstructorUsedError;
-  String? get title => throw _privateConstructorUsedError;
-  String? get body => throw _privateConstructorUsedError;
+mixin _$PostModel implements DiagnosticableTreeMixin {
+  int? get userId;
+  int? get id;
+  String? get title;
+  String? get body;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+  /// Create a copy of PostModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $PostModelCopyWith<PostModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+      _$PostModelCopyWithImpl<PostModel>(this as PostModel, _$identity);
 
-/// @nodoc
-abstract class $PostModelCopyWith<$Res> {
-  factory $PostModelCopyWith(PostModel value, $Res Function(PostModel) then) =
-      _$PostModelCopyWithImpl<$Res, PostModel>;
-  @useResult
-  $Res call({int? userId, int? id, String? title, String? body});
-}
-
-/// @nodoc
-class _$PostModelCopyWithImpl<$Res, $Val extends PostModel>
-    implements $PostModelCopyWith<$Res> {
-  _$PostModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? userId = freezed,
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? body = freezed,
-  }) {
-    return _then(_value.copyWith(
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      body: freezed == body
-          ? _value.body
-          : body // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$PostModelImplCopyWith<$Res>
-    implements $PostModelCopyWith<$Res> {
-  factory _$$PostModelImplCopyWith(
-          _$PostModelImpl value, $Res Function(_$PostModelImpl) then) =
-      __$$PostModelImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int? userId, int? id, String? title, String? body});
-}
-
-/// @nodoc
-class __$$PostModelImplCopyWithImpl<$Res>
-    extends _$PostModelCopyWithImpl<$Res, _$PostModelImpl>
-    implements _$$PostModelImplCopyWith<$Res> {
-  __$$PostModelImplCopyWithImpl(
-      _$PostModelImpl _value, $Res Function(_$PostModelImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? userId = freezed,
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? body = freezed,
-  }) {
-    return _then(_$PostModelImpl(
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      body: freezed == body
-          ? _value.body
-          : body // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$PostModelImpl with DiagnosticableTreeMixin implements _PostModel {
-  const _$PostModelImpl({this.userId, this.id, this.title, this.body});
-
-  factory _$PostModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$PostModelImplFromJson(json);
-
-  @override
-  final int? userId;
-  @override
-  final int? id;
-  @override
-  final String? title;
-  @override
-  final String? body;
-
-  @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'PostModel(userId: $userId, id: $id, title: $title, body: $body)';
-  }
+  /// Serializes this PostModel to a JSON map.
+  Map<String, dynamic> toJson();
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'PostModel'))
       ..add(DiagnosticsProperty('userId', userId))
@@ -163,51 +44,178 @@ class _$PostModelImpl with DiagnosticableTreeMixin implements _PostModel {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PostModelImpl &&
+            other is PostModel &&
             (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.body, body) || other.body == body));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, userId, id, title, body);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$PostModelImplCopyWith<_$PostModelImpl> get copyWith =>
-      __$$PostModelImplCopyWithImpl<_$PostModelImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$PostModelImplToJson(
-      this,
-    );
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'PostModel(userId: $userId, id: $id, title: $title, body: $body)';
   }
 }
 
-abstract class _PostModel implements PostModel {
-  const factory _PostModel(
-      {final int? userId,
-      final int? id,
-      final String? title,
-      final String? body}) = _$PostModelImpl;
-
-  factory _PostModel.fromJson(Map<String, dynamic> json) =
-      _$PostModelImpl.fromJson;
-
-  @override
-  int? get userId;
-  @override
-  int? get id;
-  @override
-  String? get title;
-  @override
-  String? get body;
-  @override
-  @JsonKey(ignore: true)
-  _$$PostModelImplCopyWith<_$PostModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+/// @nodoc
+abstract mixin class $PostModelCopyWith<$Res> {
+  factory $PostModelCopyWith(PostModel value, $Res Function(PostModel) _then) =
+      _$PostModelCopyWithImpl;
+  @useResult
+  $Res call({int? userId, int? id, String? title, String? body});
 }
+
+/// @nodoc
+class _$PostModelCopyWithImpl<$Res> implements $PostModelCopyWith<$Res> {
+  _$PostModelCopyWithImpl(this._self, this._then);
+
+  final PostModel _self;
+  final $Res Function(PostModel) _then;
+
+  /// Create a copy of PostModel
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? userId = freezed,
+    Object? id = freezed,
+    Object? title = freezed,
+    Object? body = freezed,
+  }) {
+    return _then(_self.copyWith(
+      userId: freezed == userId
+          ? _self.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as int?,
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      title: freezed == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      body: freezed == body
+          ? _self.body
+          : body // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _PostModel with DiagnosticableTreeMixin implements PostModel {
+  const _PostModel({this.userId, this.id, this.title, this.body});
+  factory _PostModel.fromJson(Map<String, dynamic> json) =>
+      _$PostModelFromJson(json);
+
+  @override
+  final int? userId;
+  @override
+  final int? id;
+  @override
+  final String? title;
+  @override
+  final String? body;
+
+  /// Create a copy of PostModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$PostModelCopyWith<_PostModel> get copyWith =>
+      __$PostModelCopyWithImpl<_PostModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$PostModelToJson(
+      this,
+    );
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    properties
+      ..add(DiagnosticsProperty('type', 'PostModel'))
+      ..add(DiagnosticsProperty('userId', userId))
+      ..add(DiagnosticsProperty('id', id))
+      ..add(DiagnosticsProperty('title', title))
+      ..add(DiagnosticsProperty('body', body));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PostModel &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.body, body) || other.body == body));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, userId, id, title, body);
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'PostModel(userId: $userId, id: $id, title: $title, body: $body)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$PostModelCopyWith<$Res>
+    implements $PostModelCopyWith<$Res> {
+  factory _$PostModelCopyWith(
+          _PostModel value, $Res Function(_PostModel) _then) =
+      __$PostModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call({int? userId, int? id, String? title, String? body});
+}
+
+/// @nodoc
+class __$PostModelCopyWithImpl<$Res> implements _$PostModelCopyWith<$Res> {
+  __$PostModelCopyWithImpl(this._self, this._then);
+
+  final _PostModel _self;
+  final $Res Function(_PostModel) _then;
+
+  /// Create a copy of PostModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? userId = freezed,
+    Object? id = freezed,
+    Object? title = freezed,
+    Object? body = freezed,
+  }) {
+    return _then(_PostModel(
+      userId: freezed == userId
+          ? _self.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as int?,
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      title: freezed == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      body: freezed == body
+          ? _self.body
+          : body // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+// dart format on
